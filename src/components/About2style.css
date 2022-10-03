@@ -1,0 +1,229 @@
+.about-container
+{
+    width:100%;
+    height:100%;
+    margin:auto;
+    background:gray;
+    
+}
+ .maincontainer
+{
+    
+    max-width:1640px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+
+}
+.maincontainer .about-content
+{
+    padding:2rem;
+    align-items: justify;
+
+}
+.maincontainer .about-content:hover
+{
+    border:2px dotted black;
+
+}
+
+ h2
+{
+    
+    font-size:1.4rem;
+    text-align: center;
+
+}
+.about-content p
+{
+    margin:0.5rem;
+    font-size:1rem;
+
+}
+
+
+.about-image
+{
+padding:2rem;
+text-align: center;
+
+}
+.flexing
+{
+    
+    position: relative;
+    height:40vh;
+    
+
+}
+.flexing img
+{
+    position: absolute;
+    height:35vh;
+    display: block;
+}
+   
+.flexing:hover .jitu
+{
+    top:2;
+    
+}
+.flexing:hover .shape
+{
+    top:5%;
+}
+
+
+
+
+
+.box1
+{
+    width:80%;
+    height:4%;
+    padding:6px;
+    border:2px solid white;
+    border-radius:10px;
+    position: relative;
+    background-color:blueviolet;
+    animation: html 1s infinite;
+}
+.box2
+{
+    width:60%;
+    height:4%;
+    padding:6px;
+    border:2px solid white;
+    border-radius:10px;
+    position: relative;
+    background-color:brown;
+    animation: Css3 2s linear infinite;
+}
+.box3
+{
+    width:70%;
+    height:4%;
+    padding:6px;
+    border:2px solid white;
+    border-radius:10px;
+    position: relative;
+    background-color:blue;
+    animation: JavaScript 3s infinite;
+}
+.box4
+{
+    width:40%;
+    height:4%;
+    padding:6px;
+    border:2px solid white;
+    border-radius:10px;
+    position: relative;
+    background-color:red;
+    animation: BootStrap 4s forwards;
+}
+.box5
+{
+    width:75%;
+    height:4%;
+    padding:6px;
+    border:2px solid white;
+    border-radius:10px;
+    position: relative;
+    background-color:black;
+    animation: React 10s infinite;
+}
+
+    
+    @keyframes html
+    {
+        0%
+        {
+            width:0%;
+            background-color: red;
+        }
+        80%
+        {
+            width:80%;
+            background-color:yellow;
+        }
+    }
+    @keyframes Css3
+    {
+        0%
+        {
+            width:0%;
+            background-color:gray;
+        }
+        60%
+        {
+            width:60%;
+            background-color:gray
+        }
+    }
+    @keyframes JavaScript
+    {
+        0%
+        {
+            width:0%;
+            background-color:white;
+        }
+        70%
+        {
+            width:80%;
+            background-color:rosybrown;
+        }
+    }
+    @keyframes BootStrap
+    {
+        0%
+        {
+            width:0%;
+            background-color: red;
+        }
+        40%
+        {
+            width:40%;
+            background-color:green;
+        }
+    }
+    @keyframes React
+    {
+        0%
+        {
+            width:0%;
+            background-color: red;
+        }
+        75%
+        {
+            width:80%;
+            background-color:yellow;
+        }
+    }
+    
+    @media screen and (max-width:640px) {
+
+.maincontainer
+{
+    
+    max-width:90%;
+     grid-template-columns:1fr;
+    padding:1rem;
+        
+    }
+    .about-content
+    {
+        width:90%;
+    
+    }
+    
+.about-content h2
+{
+    margin:2px;
+    font-size:1rem;
+
+}
+
+
+
+
+    }

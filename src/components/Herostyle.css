@@ -1,0 +1,161 @@
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.introimage {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+}
+mask::after
+{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero .content {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    text-align: center;
+}
+
+.hero .content h4 {
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero .content h1 {
+    font-size: 3.5rem;
+    color:white;
+    position: relative;
+}
+ 
+.hero .content h1::before {
+    content: "Jitendra ";
+    font-size: 3.5rem;
+    color:white;
+    position: absolute;
+    color:red;
+    animation: slide 3s linear infinite;
+    overflow: hidden;
+    border-right:1px solid red;
+}
+
+
+.hero .content p {
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:5%;
+}
+.btn-light
+{
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: yellow;
+    color:#222;
+    border:1px solid white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn
+{
+    margin-left: 8px;
+    background: transparent;
+    color:white;
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border:1px solid yellow;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+    
+.btn:hover
+{
+    color:red;
+}    
+    
+    
+
+@keyframes slide {
+    
+    0%{
+        width:0%;
+    }
+    55%
+    {width:55%;}
+    52%
+    {width:50%;}
+    
+    
+}
+
+
+
+
+@media screen  and (max-width:640px){
+    .hero .content {
+        position: absolute;
+        top: 60%;
+        left:0%;
+        text-align: center;
+    }
+    
+    .hero .content h4 {
+        font-size: 1.2rem;
+        color:white;
+        text-transform: uppercase;
+        
+    }
+    
+    .hero .content h1 {
+        font-size: 3rem;
+        color: white;
+    }
+    
+    .hero .content h1::before {
+        content: "Jitendra";
+        font-size: 3rem;
+        color:white;
+        position: absolute;
+        color:red;
+        animation: slide 2s linear infinite;
+        overflow: hidden;
+        border-right:1px solid red;
+    }
+    
+        
+    
+    .hero .content p {
+        font-size: 1rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+}

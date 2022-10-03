@@ -1,0 +1,70 @@
+.footer
+{
+    width:100%;
+    padding:6rem 0;
+background-color: darkslategray;  
+}
+.footer .footer-container
+{
+    max-width: 1140px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:40px;
+}
+.left
+{
+    max-width:100%;
+    height:100%;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+}
+.location
+{
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+.phone
+{
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.location p{
+    line-height: 30px;
+}
+.right
+{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+}
+.right p{
+    
+    line-height: 1.5em;
+    text-align: justify;
+}
+.right .social
+{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    size: 30px;
+    padding:1rem 0rem;
+}
+.git
+{
+    font-size:1.4em;
+}
+    
+@media screen and (max-width:640px){
+
+ .footer .footer-container
+{
+    
+    grid-template-columns: 1fr;
+    
+}    
+}    
