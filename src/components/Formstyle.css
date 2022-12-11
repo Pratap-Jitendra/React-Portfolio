@@ -37,7 +37,7 @@ form input, form textarea
 
 .btn9
 {
-    
+    margin-top: 2em;
     background: transparent;
     color:white;
     padding: 12px 32px;
@@ -48,8 +48,9 @@ form input, form textarea
     cursor: pointer;
     border-radius: 10px;
     width:15%;
-    display: grid;
-    
+    height:auto;
+    display: flex;
     justify-content: center;
     align-items: center;
+    
 }

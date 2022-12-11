@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import  Epub from '../components/Epub';
+import Digita from '../components/Digita';
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <NavBar/>
       <Hero/>
-      <Epub/>
+      <Digita/>   
       <Footer/>
     </div>
   )
